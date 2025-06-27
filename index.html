@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StrachanDev</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="script.js" defer></script>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"rel="stylesheet"/>
+    </head>
+
+  <body>
+    <div id="header">
+        <h1>StrachanDev</h1>
+        <div id="header-links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <div id="content">
+        <div id="graphic-container" class="section"></div>
+
+        <div id="about" class="section main-section">
+            <h1>About</h1>
+            <div id="about-content">
+                <img src="assets/profile.png" alt="Painting of a cat figure">
+            
+                <div id="text-wrapper" >
+                    <h1>Rory Strachan</h1>
+                    <p>I have always enjoyed creative endeavors. I largely focused my time on more standard forms of art growing up, In high school I realized that programming was another tool that could vastly increase the kinds of things I could create. Paintings are nice, and I still do like them, but I really enjoy being able to make things people can play with more directly.</p>
+                    <p>In high school I learned Java and JavaScript; in college I refined my knowledge with these languages and also learned C. In my spare time I have been learning Python.</p>
+                    <p>As of now my portfolio is largely Python and JavaScript. Recently, I have been focusing on making my programs more class oriented.</p>
+                </div>
+            </div>
+        </div>
+    
+        <div id="projects" class="section main-section">
+            <h1>Projects</h1>
+            <div id="projects-content">
+                <div class="project-example project-container">
+                    <div class="project-wrapper">
+                        <div class="project-info">
+                            <p>Python application created with pygame that uses keyboard presses and text to speech to allow a user to play computer chess without sight. Includes a GUI, player vs player mode, and player vs computer mode.</p>
+                            <p>Allows the user to use the arrow keys to explore the board and read off what piece is on each tile. Piece movement is done through keyboard presses where the user uses tile notation to select a piece (A5, E1, ETC). Also includes a log to read off previous actions taken.</p>
+                            <p>Project was made in a mock SCRUM environement where the role of SCRUM leader shifted every other week. I Developed the logic behind the Chess program as well as implemented functions to allow the user to play with key presses alone.</p>
+                            <div class="project-specifics">
+                                <div class="project-tool-specifics">
+                                    <p>Python</p>
+                                    <p>Pygame</p>
+                                </div>
+                                <div class="link-container">
+                                    <a href="https://github.com/TX701/Blind_Accessible_Chess" target="__blank"><i class='bx bxl-github'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h1>Blind Accessible Chess</h1>
+                            <video src="./assets/pygame_chess.mp4" autoplay="autoplay" loop></video>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-example project-container">
+                    <div class="project-wrapper">
+                        <div class="project-content">
+                            <h1>Art Portfolio Website</h1>
+                            <video src="./assets/windows98.mp4" autoplay="autoplay" loop></video>
+                        </div>
+                        <div class="project-info">
+                            <p>An art portfolio website made for a friend. The website is designed to mimic Windows 98. To view a different page the user will click on the icons on the desktop.</p>
+                            <p>This website has a focus on showcasing artwork. Folders are used to segement different mediums of art, clicking an art piece within a folder will open that art piece in its own window for the user to view.</p>
+                            <p>Includes a home window for the user to view on bootup (that can be disabled through cookies) and a working minesweeper application.</p>
+                            <div class="project-specifics">
+                                <div class="project-tool-specifics">
+                                    <p>HTML</p>
+                                    <p>CSS</p>
+                                    <p>JavaScript</p>
+                                </div>
+                                <div class="link-container">
+                                    <a href="https://github.com/TX701/Windows_Gallery_Portfolio" target="__blank"><i class='bx bxl-github'></i></a>
+                                    <a href="https://kureijei.com" target="__blank"><i class='bx bx-link'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-example project-container">
+                    <div class="project-wrapper">
+                        <div class="project-info">
+                            <p>Breakout game made with Pygame. The Application features menus and score tracking.</p>
+                            <p>This program was made to expand on a Pong application I made, but I also wanted practice on making my programs more class oriented.</p>
+                            <div class="project-specifics">
+                                <div class="project-tool-specifics">
+                                    <p>Python</p>
+                                    <p>Pygame</p>
+                                </div>
+                                <div class="link-container">
+                                    <a href="https://github.com/rstr-dev/Pygame_Breakout.git" target="__blank"><i class='bx bxl-github'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h1>Pygame Breakout</h1>
+                            <video src="./assets/breakout.mp4" autoplay="autoplay" loop></video>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-example project-container">
+                    <div class="project-wrapper">
+                        <div class="project-content">
+                            <h1>JavaScript Minesweeper</h1>
+                            <video src="./assets/minesweeper.mp4" autoplay="autoplay" loop></video>
+                        </div>
+                        <div class="project-info">
+                            <p>The Minesweeper application designed for the Windows 98 website.</p>
+                            <p>Features a timer, multiple difficulties, and two different marking options.</p>
+                            <div class="project-specifics">
+                                <div class="project-tool-specifics">
+                                    <p>HTML</p>
+                                    <p>CSS</p>
+                                    <p>JavaScript</p>
+                                </div>
+                                <div class="link-container">
+                                    <a href="https://github.com/rstr-dev/Minesweeper" target="__blank"><i class='bx bxl-github'></i></a>
+                                    <a href="https://rstr-dev.github.io/Minesweeper" target="__blank"><i class='bx bx-link'></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="smaller-projects" class="section main-section">
+            <h1>Other Projects</h1>
+            <div id="grid">
+                <div class="small-project-grid">
+                    <div class="project-card">
+                        <h2>Python Pong</h2>
+                        <p>Pong recreated in pygame. Application featues a CPU oppenent and keeps track of both the player and computer's score.</p>
+                        <div class="project-tools">
+                            <p>Python</p>
+                            <p>Pygame</p>
+                            <a href="https://github.com/rstr-dev/Pygame_Pong" target="__blank"><i class='bx bxl-github'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="small-project-grid">
+                    <div class="project-card">
+                        <h2>Textbox Generator</h2>
+                        <p>Reads off of a text file to print text into a text box. Text prints character by character and is automatically formatted to fit into the textbox.</p>
+                        <div class="project-tools">
+                            <p>Python</p>
+                            <p>Pygame</p>
+                            <a href="https://github.com/rstr-dev/Pygame_Texbox_Generator" target="__blank"><i class='bx bxl-github'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="small-project-grid">
+                    <div class="project-card">
+                        <h2>Particle Constellations</h2>
+                        <p>Constellation animation made using the canvas element. Points are randomly placed on the canvas and connected to nearby points through vectors.</p>
+                        <div class="project-tools">
+                            <p>HTML</p>
+                            <p>CSS</p>
+                            <p>JavaScript</p>
+                            <a href="https://github.com/rstr-dev/Particle_Constellation_Effect" target="__blank"><i class='bx bxl-github'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="small-project-grid">
+                    <div class="project-card">
+                        <h2>Python Blackjack</h2>
+                        <p>Simple application to play Blackjack in a Python terminal.</p>
+                        <div class="project-tools">
+                            <p>Python</p>
+                            <p>Pygame</p>
+                            <a href="https://github.com/rstr-dev/Python_Blackjack" target="__blank"><i class='bx bxl-github'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="small-project-grid">
+                    <div class="project-card">
+                        <h2>Backloggd Scraper</h2>
+                        <p>Scrapes a user's Backloggd profile and returns information about played games.</p>
+                        <div class="project-tools">
+                            <p>JavaScript</p>
+                            <a href="https://github.com/rstr-dev/Backloggd_Scraper" target="__blank"><i class='bx bxl-github'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div id="contact">
+            <hr>
+            <div id="contact-content">
+                <div id="left">
+                    <div id="information">
+                        <h1>Rory Strachan</h1>
+                        <a href="mailto:strachana0104@gmail.com">strachana0104@gmail.com</a>
+                        <p>(248) 413 - 7462</p>
+                        <div id="icons">
+                            <a href="https://www.linkedin.com/in/rory-strachan-a56216356/"><i class='bx bxl-linkedin' ></i></a>
+                            <a href="https://github.com/rstr-dev"><i class='bx bxl-github' ></i></a>
+                        </div>
+                    </div>
+                    <a href="./assets/STRACHAN_RESUME.pdf" target="__blank">Resume</a>
+                </div>
+                <div id="right">
+                    <button id="scroll-up">↑</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  </body>
+</html>
