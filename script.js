@@ -8,6 +8,7 @@ window.addEventListener('load', () => {
 
     const container = document.querySelector("#graphic-container canvas");
     const context = container.getContext("2d");
+    let rect = container.getBoundingClientRect();
 
     let radius = 1; // particle size
     let particleRadius = 100 // radius for defining "closeness"
@@ -62,8 +63,8 @@ window.addEventListener('load', () => {
             let exclude = randomValueExclude(1, 3, []);
             for (let i = 0; i < this.amount; i++) {
                 let colorArray = getColorValues(exclude);
-                let coord_x = randomValueExclude(container.getBoundingClientRect().x + radius, container.offsetWidth - radius, []);
-                let coord_y = randomValueExclude(container.getBoundingClientRect().y + radius, container.offsetHeight - radius, []);
+                let coord_x = randomValueExclude(rect.x + radius, container.offsetWidth - radius, []);
+                let coord_y = randomValueExclude(rect.y + radius, container.offsetHeight - radius, []);
                 this.collection.push(new Particle(coord_x , coord_y, `rgb(${colorArray[0]}, ${colorArray[1]}, ${colorArray[2]})`));
             }
         }
@@ -109,12 +110,12 @@ window.addEventListener('load', () => {
             this.x = this.x + this.dx;
             this.y = this.y + this.dy;
             
-            if (this.x < container.getBoundingClientRect().x + radius) { // if the particle is moving past the left edge
+            if (this.x < rect.x + radius) { // if the particle is moving past the left edge
                 this.dx = -this.dx;
             } else if (container.offsetWidth - radius < this.x) { // if the particle is moving past the right edge
                 this.dx = -this.dx;
             }
-            if (this.y < container.getBoundingClientRect().y + radius) { // if the particle is moving past the top edge
+            if (this.y < rect.y + radius) { // if the particle is moving past the top edge
                 this.dy = -this.dy;
             } else if (container.offsetHeight - radius < this.y) { // if the particle is moving past the bottom edge
                 this.dy = -this.dy;
@@ -147,8 +148,6 @@ window.addEventListener('load', () => {
         requestAnimationFrame(advance);
     }
     
-    let amount = 300 ? (container.getBoundingClientRect().width > 700) : 100;
-
     const particles = new Particles(300);
     advance();
 })
