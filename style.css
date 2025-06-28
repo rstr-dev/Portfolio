@@ -128,7 +128,7 @@ h1 {
 
 #projects-content .project-wrapper {
     display: flex;
-    align-items: start;
+    align-items: center;
     justify-content: space-between;
     
     gap: 10rem;
