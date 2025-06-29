@@ -138,12 +138,9 @@ window.addEventListener('load', () => {
             });
         }
     }
-
-    setInterval(function() {
-        context.clearRect(0, 0, container.width, container.height); // clear canvas
-    }, 5);
     
     const advance = () => {
+        context.clearRect(0, 0, container.width, container.height); // clear canvas
         particles.animate(); // move particles and create connections
         requestAnimationFrame(advance);
     }
