@@ -228,9 +228,13 @@ p, a {
     justify-content: space-around;
     background: var(--secondary);
 
+    padding-left: 10rem;
+    padding-right: 10rem;
+
     width: 100%;
     margin-bottom: 4rem;
     padding: 2rem;
+    gap: 4rem;
 }
 
 #contact #contact-left a {
@@ -271,7 +275,21 @@ p, a {
     color: var(--background);
 }
 
-@media screen and (max-width: 1128px) {
+@media screen and (max-width: 1500px) {
+    #graphic-container {
+        height: 50vh;
+    }
+
+    h1 {
+        font-size: 1.50rem;
+    }
+
+    p, a {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
     #projects {
         display: none;
     }
@@ -279,6 +297,57 @@ p, a {
     #smaller-projects .larger-project {
         display: flex;
     }
+
+    #contact #contact-right {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #contact #contact-content {
+        flex-direction: column;
+    }
+
+    #graphic-container {
+        height: 30vh;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .main-section {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    #about > h1 {
+        display: none;
+    }
+
+    #about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about img {
+        display: none;
+    }
+
+    #about #about-content #text-wrapper {
+        width: 100%;
+    }
+
+    #contact #contact-content {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    #scroll-up button {
+        margin-right: 5rem;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -301,22 +370,64 @@ p, a {
     }
 }
 
-@media screen and (max-width: 700px) {
-    #about > h1 {
-        display: none;
+@media screen and (max-width: 550px) {
+    .main-section {
+        width: 90vw;
+        padding-left: 0;
+        padding-right: 0;
     }
 
-    #about {
-        display: flex;
+    #contact #contact-content {
+        width: 99vw;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #scroll-up button {
+        margin-right: 2rem;
+    }
+
+    #header-links {
+        width: 90%;
+    }
+
+    #graphic-container {
+        height: 20vh;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #header-links {
+        display: none;
+    }
+    
+    #scroll-up button {
+        margin-right: 1rem;
+    }
+
+    #contact-right {
         flex-direction: column;
-        align-items: center;
     }
+}
 
-    #about img {
+@media screen and (max-width: 400px) {
+    #graphic-container {
         display: none;
     }
 
-    #about #about-content #text-wrapper {
-        width: 100%;
+    .project-card {
+        width: 90vw;
+    }
+
+    #contact-content {
+        width: 90vw !important;
+    }
+
+    h1 {
+        font-size: 1.25rem;
+    }
+
+    p, a {
+        font-size: 0.75rem;
     }
 }

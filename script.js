@@ -13,7 +13,7 @@ window.addEventListener('load', () => {
     let radius = 1; // particle size
     let particleRadius = 100 // radius for defining "closeness"
 
-    let particleCount = width / 6;
+    let particleCount = (400 < width) ? width / 6: 0;
 
     const randomValueExclude = (min, max, except) => { // returns a random value between two values excluding a list of values
         let value = Math.floor(Math.random() * (max - min + 1) + min);
